@@ -19,8 +19,6 @@ repositories {
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
-
-    // For other JUnit Testing
     testImplementation 'junit:junit:4.13.2'
 
     // This dependency is used by the application.
@@ -29,7 +27,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'testgradle.App'
+    mainClass = 'gradebookentry.project.App'
 }
 
 tasks.named('test') {
