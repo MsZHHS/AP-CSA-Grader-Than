@@ -12,6 +12,9 @@ public class Part1 {
         // Print the rest of the userWord on the last line
         
         System.out.println(userWord);
+
+        Test test = new Test();
+        System.out.print(test);
         
         scan.close();
     }
