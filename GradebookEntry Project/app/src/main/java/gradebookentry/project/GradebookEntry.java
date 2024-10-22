@@ -11,6 +11,13 @@ public class GradebookEntry {
         score3 = ts3;
     }
 
+    public GradebookEntry(String n) {
+        name = n;
+        score1 = 0;
+        score2 = 0;
+        score3 = 0;
+    }
+
     public String getName() {
         return name;
     }
@@ -54,6 +61,17 @@ public class GradebookEntry {
             }
         }
 
+    }
+
+    public void setTestScore(int newScore1, int whichTest1, int newScore2, int whichTest2) {
+        setTestScore(newScore1, whichTest1);
+        setTestScore(newScore2, whichTest2);
+    }
+
+   public void setTestScore(int newScore1, int whichTest1, int newScore2, int whichTest2, int newScore3, int whichTest3) {
+        setTestScore(newScore1, whichTest1);
+        setTestScore(newScore2, whichTest2);
+        setTestScore(newScore3, whichTest3);
     }
 
     /**

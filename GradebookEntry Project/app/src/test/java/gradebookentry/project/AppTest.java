@@ -11,8 +11,6 @@ import org.junit.Before;
 import org.junit.After;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 public class AppTest {
     @Before
@@ -41,5 +39,83 @@ public class AppTest {
         assertEquals(t1.getScore1(), 100);
         assertEquals(t1.getScore2(), 90);
         assertEquals(t1.getScore3(), 80);
+    }
+
+    @Test
+    public void setTestScoresNormal() {
+        // You may rename this method to better suit the purpose of your test case
+        // Your test case logic here
+        GradebookEntry t1 = new GradebookEntry("Z", 100, 90, 80);
+        assertEquals(t1.getScore1(), 100);
+        t1.setTestScore(93, 1);
+        assertEquals(t1.getScore1(), 93);
+    }
+
+    @Test
+    public void setTestScores105() {
+        // You may rename this method to better suit the purpose of your test case
+        // Your test case logic here
+        GradebookEntry t1 = new GradebookEntry("Z", 100, 90, 80);
+        assertEquals(t1.getScore1(), 100);
+        t1.setTestScore(105, 2);
+        assertEquals(t1.getScore2(), 105);
+        assertEquals(t1.getScore3(), 80);
+    }
+
+    @Test
+    public void testNoParameterConstructor() {
+        // You may rename this method to better suit the purpose of your test case
+        // Your test case logic here
+        GradebookEntry t1 = new GradebookEntry("Z");
+        assertEquals(t1.getScore1(), 0);
+        assertEquals(t1.getScore2(), 0);
+        assertEquals(t1.getScore3(), 0);
+    }
+
+    @Test
+    public void setTestScores0() {
+        // You may rename this method to better suit the purpose of your test case
+        // Your test case logic here
+        GradebookEntry t1 = new GradebookEntry("Z", 100, 90, 80);
+        assertEquals(t1.getScore1(), 100);
+        t1.setTestScore(0, 3);
+        assertEquals(t1.getScore2(), 90);
+        assertEquals(t1.getScore3(), 0);
+    }
+
+    @Test
+    public void setTestScoresBadTestNum() {
+        // You may rename this method to better suit the purpose of your test case
+        // Your test case logic here
+        GradebookEntry t1 = new GradebookEntry("Z", 100, 90, 80);
+        assertEquals(t1.getScore1(), 100);
+        t1.setTestScore(0, 4);
+        assertEquals(t1.getScore2(), 90);
+        assertEquals(t1.getScore3(), 80);
+    }
+
+
+    @Test
+    public void testCalcAvg() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 91, 85, 95);
+        assertEquals(90.3333, entry.calcAvg(), 0.01);
+    }
+
+    @Test
+    public void testGetBestScore() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 90, 85, 95);
+        assertEquals(95, entry.getBestScore());
+    }
+
+    @Test
+    public void testHasAtLeastTrue() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 90, 85, 95);
+        assertTrue(entry.hasAtLeast(95));
+    }
+
+    @Test
+    public void testHasAtLeastFalse() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 90, 85, 95);
+        assertFalse(entry.hasAtLeast(96));
     }
 }
