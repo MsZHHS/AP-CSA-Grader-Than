@@ -63,6 +63,28 @@ public class AppTest {
     }
 
     @Test
+    public void setTestScores106() {
+        // You may rename this method to better suit the purpose of your test case
+        // Your test case logic here
+        GradebookEntry t1 = new GradebookEntry("Z", 100, 90, 80);
+        t1.setTestScore(106, 2);
+        assertEquals(t1.getScore1(), 100);
+        assertEquals(t1.getScore2(), 90);
+        assertEquals(t1.getScore3(), 80);
+    }
+
+    @Test
+    public void setTestScoresNeg() {
+        // You may rename this method to better suit the purpose of your test case
+        // Your test case logic here
+        GradebookEntry t1 = new GradebookEntry("Z", 100, 90, 80);
+        t1.setTestScore(-1, 2);
+        assertEquals(t1.getScore1(), 100);
+        assertEquals(t1.getScore2(), 90);
+        assertEquals(t1.getScore3(), 80);
+    }
+
+    @Test
     public void testNoParameterConstructor() {
         // You may rename this method to better suit the purpose of your test case
         // Your test case logic here
@@ -102,8 +124,44 @@ public class AppTest {
     }
 
     @Test
-    public void testGetBestScore() {
+    public void testGetBestScore3() {
         GradebookEntry entry = new GradebookEntry("John Doe", 90, 85, 95);
+        assertEquals(95, entry.getBestScore());
+    }
+
+    @Test
+    public void testGetBestScore2() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 90, 95, 85);
+        assertEquals(95, entry.getBestScore());
+    }
+
+    @Test
+    public void testGetBestScore1() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 100, 85, 95);
+        assertEquals(100, entry.getBestScore());
+    }
+
+    @Test
+    public void testGetBestScore23() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 90, 95, 95);
+        assertEquals(95, entry.getBestScore());
+    }
+
+    @Test
+    public void testGetBestScore13() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 95, 85, 95);
+        assertEquals(95, entry.getBestScore());
+    }
+
+    @Test
+    public void testGetBestScore12() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 100, 100, 95);
+        assertEquals(100, entry.getBestScore());
+    }
+
+    @Test
+    public void testGetBestScore123() {
+        GradebookEntry entry = new GradebookEntry("John Doe", 95, 95, 95);
         assertEquals(95, entry.getBestScore());
     }
 
