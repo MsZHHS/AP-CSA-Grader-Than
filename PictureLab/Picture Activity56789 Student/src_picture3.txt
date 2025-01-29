@@ -1,0 +1,8 @@
+"C:\\Users\\Glen\\Documents\\CB\\2013 Summer\\3 Labs\\APCS Labs\\Picture Lab\\Picture Lab Activities\\pixLab\\Picture Activity356789 Student\\DigitalPicture.java"
+"C:\\Users\\Glen\\Documents\\CB\\2013 Summer\\3 Labs\\APCS Labs\\Picture Lab\\Picture Lab Activities\\pixLab\\Picture Activity356789 Student\\FileChooser.java"
+"C:\\Users\\Glen\\Documents\\CB\\2013 Summer\\3 Labs\\APCS Labs\\Picture Lab\\Picture Lab Activities\\pixLab\\Picture Activity356789 Student\\ImageDisplay.java"
+"C:\\Users\\Glen\\Documents\\CB\\2013 Summer\\3 Labs\\APCS Labs\\Picture Lab\\Picture Lab Activities\\pixLab\\Picture Activity356789 Student\\Picture.java"
+"C:\\Users\\Glen\\Documents\\CB\\2013 Summer\\3 Labs\\APCS Labs\\Picture Lab\\Picture Lab Activities\\pixLab\\Picture Activity356789 Student\\PictureExplorer.java"
+"C:\\Users\\Glen\\Documents\\CB\\2013 Summer\\3 Labs\\APCS Labs\\Picture Lab\\Picture Lab Activities\\pixLab\\Picture Activity356789 Student\\PictureFrame.java"
+"C:\\Users\\Glen\\Documents\\CB\\2013 Summer\\3 Labs\\APCS Labs\\Picture Lab\\Picture Lab Activities\\pixLab\\Picture Activity356789 Student\\Pixel.java"
+"C:\\Users\\Glen\\Documents\\CB\\2013 Summer\\3 Labs\\APCS Labs\\Picture Lab\\Picture Lab Activities\\pixLab\\Picture Activity356789 Student\\SimplePicture.java"
